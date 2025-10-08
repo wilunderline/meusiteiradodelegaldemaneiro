@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wilkner - Meu Site Pessoal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Fundo com efeito Frutiger Aero -->
+    <div class="background">
+        <div class="gradient-overlay"></div>
+        <div class="blur-overlay"></div>
+        
+        <!-- Bolhas animadas -->
+        <div id="bubbles-container"></div>
+
+        <!-- Efeitos de luz -->
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="blob blob-3"></div>
+    </div>
+
+    <!-- Conteúdo principal -->
+    <div class="main-content">
+        <!-- Header -->
+        <header class="glass-header">
+            <div class="container">
+                <nav class="navbar">
+                    <h1 class="logo">Wilkner</h1>
+                    <div class="nav-buttons">
+                        <button class="glass-button active" onclick="showSection('home')">Início</button>
+                        <button class="glass-button" onclick="showSection('about')">Sobre</button>
+                        <button class="glass-button" onclick="showSection('favorites')">Favoritos</button>
+                    </div>
+                </nav>
+            </div>
+        </header>
+
+        <!-- Hero Section -->
+        <section id="home" class="section active">
+            <div class="container">
+                <div class="hero-content">
+                    <div class="hero-title-wrapper">
+                        <div class="hero-glow"></div>
+                        <h2 class="hero-title">Olá, eu sou Wilkner!</h2>
+                    </div>
+                    
+                    <p class="hero-description">
+                        Bem-vindo ao meu espaço pessoal na web, onde compartilho um pouco sobre mim, 
+                        minhas experiências e as coisas que amo.
+                    </p>
+
+                    <div class="hero-button-wrapper">
+                        <button class="glass-button-primary" onclick="showSection('about')">
+                            <span class="sparkle-icon">✨</span>
+                            Conheça mais
+                        </button>
+                    </div>
+
+                    <!-- Decorative elements -->
+                    <div class="decorative-icons">
+                        <div class="icon-card float-1">
+                            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                            </svg>
+                        </div>
+                        <div class="icon-card float-2">
+                            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M18 8h1a4 4 0 0 1 0 8h-1"></path>
+                                <path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"></path>
+                                <line x1="6" y1="1" x2="6" y2="4"></line>
+                                <line x1="10" y1="1" x2="10" y2="4"></line>
+                                <line x1="14" y1="1" x2="14" y2="4"></line>
+                            </svg>
+                        </div>
+                        <div class="icon-card float-3">
+                            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                                <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="section">
+            <div class="container">
+                <h2 class="section-title">Minhas Experiências</h2>
+                
+                <div class="cards-grid">
+                    <div class="glass-card hover-lift">
+                        <div class="card-icon gradient-purple-blue">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M18 8h1a4 4 0 0 1 0 8h-1"></path>
+                                <path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"></path>
+                                <line x1="6" y1="1" x2="6" y2="4"></line>
+                                <line x1="10" y1="1" x2="10" y2="4"></line>
+                                <line x1="14" y1="1" x2="14" y2="4"></line>
+                            </svg>
+                        </div>
+                        <h3 class="card-title">Garçom</h3>
+                        <p class="card-description">
+                            Experiência em atendimento ao cliente e trabalho em equipe
+                        </p>
+                    </div>
+
+                    <div class="glass-card hover-lift">
+                        <div class="card-icon gradient-blue-cyan">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                                <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+                            </svg>
+                        </div>
+                        <h3 class="card-title">Operador de Caixa</h3>
+                        <p class="card-description">
+                            Habilidades em gestão financeira e atendimento
+                        </p>
+                    </div>
+                </div>
+
+                <div class="love-card-wrapper">
+                    <div class="glass-card love-card">
+                        <div class="love-icon-wrapper">
+                            <div class="love-icon">
+                                <svg viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2">
+                                    <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                                </svg>
+                            </div>
+                        </div>
+                        <h3 class="card-title">Minha Namorada</h3>
+                        <p class="card-description">
+                            A pessoa mais especial da minha vida, que me inspira e me faz feliz todos os dias! 💕
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Favorites Section -->
+        <section id="favorites" class="section">
+            <div class="container">
+                <h2 class="section-title">Coisas que Eu Amo</h2>
+                
+                <div class="favorites-grid">
+                    <div class="glass-card hover-lift favorite-card">
+                        <div class="favorite-icon gradient-yellow-green">
+                            🥤
+                        </div>
+                        <h3 class="card-title">Schweppes</h3>
+                    </div>
+
+                    <div class="glass-card hover-lift favorite-card">
+                        <div class="favorite-icon gradient-orange-red">
+                            🍗
+                        </div>
+                        <h3 class="card-title">Parmegiana de Frango</h3>
+                    </div>
+
+                    <div class="glass-card hover-lift favorite-card">
+                        <div class="favorite-icon gradient-purple-pink">
+                            💜
+                        </div>
+                        <h3 class="card-title">Cor Roxa</h3>
+                    </div>
+
+                    <div class="glass-card hover-lift favorite-card">
+                        <div class="favorite-icon gradient-cyan-blue">
+                            🥉
+                        </div>
+                        <h3 class="card-title">Numeral Terceiro</h3>
+                    </div>
+                </div>
+
+                <div class="info-card-wrapper">
+                    <div class="glass-card info-card">
+                        <h3 class="card-title">Sobre a Estética Frutiger Aero</h3>
+                        <div class="info-content">
+                            <p>
+                                A estética <strong>Frutiger Aero</strong> é um estilo visual que marcou os anos 2000 e início dos 2010, 
+                                caracterizado por elementos brilhantes, efeitos de vidro, cores vibrantes e uma harmonia entre 
+                                tecnologia e natureza.
+                            </p>
+                            <p>
+                                Adoro essa estética por sua sensação otimista e futurista, que combina perfeitamente com minha 
+                                personalidade e minha visão de mundo! ✨
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="glass-footer">
+            <div class="container">
+                <p class="footer-text">
+                    Feito com 
+                    <svg class="heart-icon" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                    </svg>
+                    por Wilkner
+                </p>
+                <p class="footer-subtext">
+                    Inspirado na estética Frutiger Aero ✨
+                </p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
