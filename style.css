@@ -10,6 +10,11 @@ body {
     min-height: 100vh;
     overflow-x: hidden;
     color: #333;
+    /* cursor: url('./assets/herobrine/Minecraft_Herobrine_normal.cur') 16 16, auto; */
+        cursor: url(MinecraftHerobrine_normal.cur) 16 16, auto;
+}
+button, a {
+    cursor: url(MinecraftHerobrine_link.cur), auto;
 }
 
 html {
